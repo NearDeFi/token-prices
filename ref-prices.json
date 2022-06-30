@@ -1,5 +1,5 @@
 {
   'meta-token.near': { decimal: 24, price: '0.00488593', symbol: 'META' },
-  'token.v2.ref-finance.near': { decimal: 18, price: '0.25866486', symbol: 'REF' },
-  'token.burrow.near': { decimal: 18, price: '0.00986376', symbol: 'BRRR' }
+  'token.v2.ref-finance.near': { decimal: 18, price: '0.25857743', symbol: 'REF' },
+  'token.burrow.near': { decimal: 18, price: '0.00990187', symbol: 'BRRR' }
 }
