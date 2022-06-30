@@ -1,0 +1,15 @@
+{
+  "extends": ["prettier", "eslint:recommended", "plugin:prettier/recommended"],
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error", "info"] }]
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "token-prices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/get-prices.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get": "node src/get-prices",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "node-fetch": "^3.2.6",
+    "prettier": "^2.7.1",
+    "ramda": "^0.28.0"
+  }
+}
