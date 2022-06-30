@@ -8,7 +8,6 @@ const TOKENS = [
 ]
 
 const main = async () => {
-  console.info("main")
   const prices = await fetch(
     "https://indexer.ref-finance.net/list-token-price",
   ).then((res) => res.json())
