@@ -1,0 +1,25 @@
+name: Fetch REF Prices
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  updateStats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prepare
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm i
+      - name: Update stats
+        run: node src/get-prices > ref-prices.json
+      - uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "REF Prices Updater"
+          author_email: "radu@proximity.dev"
+          add: "ref-prices.json --force"
+          message: "ref prices fetching"
