@@ -12,7 +12,7 @@ const main = async () => {
     "https://indexer.ref-finance.net/list-token-price",
   ).then((res) => res.json())
 
-  console.info(pick(TOKENS, prices))
+  console.info(JSON.stringify(pick(TOKENS, prices)))
 }
 
 main()
