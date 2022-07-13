@@ -9,7 +9,7 @@ const TOKENS = [
 
 const main = async () => {
   const prices = await fetch(
-    "https://indexer.ref-finance.net/list-token-price",
+    "https://indexer.ref.finance/list-token-price",
   ).then((res) => res.json())
 
   console.info(JSON.stringify(pick(TOKENS, prices)))
